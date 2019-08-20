@@ -5,19 +5,54 @@
 <title>Editor JavaScript online - www.cubicfactory.com</title>
 </head>
 <body>
-  <div id="bar"> hora / lunes /martes ...<div>
-  <div id="hora" class="dia">
-  </div>
-  <div class="dia">
-  	<div id="complemento" ></div>
-  	<div id="winwin" ></div>
-  </div>
+
+    <div id="Grafica">
+      
+    	  <div id="bar"> hora / lunes /martes ...<div>
+          <div id="hora" class="dia"> </div>
+            
+          <div class="dia">
+            <div id="complemento" ></div>
+            <div id="winwin" ></div>
+          </div>
+            
+          <div class="dia">
+            <div id="complemento2" ></div>
+            <div id="complemento3" ></div>
+            <div id="winwin2" ></div>
+          </div>
     
-  <div class="dia">
-  	<div id="complemento2" ></div>
-  	<div id="winwin2" ></div>
-  </div>
-  
+    </div>
+            
+    <div id="config">
+      <input type="text" name="materia" size="40" 	placeholder="nombre del curso"><br>
+      <input type="checkbox" name="casilla"> L 
+      HoraI: <input type="time" name="hora" size="20">
+      HoraF: <input type="time" name="hora" size="20">
+      <input type="color" name="color"><br>
+      
+            <input type="checkbox" name="casilla">M
+      HoraI: <input type="time" name="hora" size="20">
+      HoraF: <input type="time" name="hora" size="20">
+      <input type="color" name="color"><br>
+      
+            <input type="checkbox" name="casilla">M
+      HoraI: <input type="time" name="hora" size="20">
+      HoraF: <input type="time" name="hora" size="20">
+      <input type="color" name="color"><br>
+      
+            <input type="checkbox" name="casilla">. J 
+       HoraI: <input type="time" name="hora" size="20">
+      HoraF: <input type="time" name="hora" size="20">
+      <input type="color" name="color"><br>
+      
+            <input type="checkbox" name="casilla"> V
+      HoraI: <input type="time" name="hora" size="20">
+      HoraF: <input type="time" name="hora" size="20">
+      <input type="color" name="color"><br>
+      
+      <input type="button" value="insertar Materia">
+    </div>
 </body>
 </html>
 
@@ -66,12 +101,31 @@
   	margin-top:0px;
   float:left
 }
-#winwin2{
+#complemento3{
 	width:7px;
  	height:180px;
- 	background:pink;
-  	margin-top:280px;
+ 	background:#3EF2F5;
+  	margin-top:270px;
+  float:left
+}
+#winwin2{
+	width:7px;
+ 	height:80px;
+ 	background:green;
+  	margin-top:480px;
  	float:left
+}
+#Grafica{
+    background:#ECF0F1;
+  	overflow:hidden;
+   	width:900px;
+}
+#config{
+  	width:100%;
+ 	height:180px;
+  	float:left;
+  border:1px solid blue;
+  background:green;
 }
 
 
