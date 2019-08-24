@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Horarios</title>
+  <link rel="stylesheet" href="horarios.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Hind+Guntur|Open+Sans+Condensed:300|Pathway+Gothic+One|Rajdhani|Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <dialog id="mdlnm">
+    <form id="config">
+      <input id="fnameMat"  class="update" type="text" name="materia" size="40" 	placeholder="Nombre de la materia" >
+      <input id="fcolor"  type="color" name="color">
+      <input id="fnameDoc"   class="update" type="text" name="materia" size="40" 	placeholder="Nombre Docente">
+      <textarea id="ftext" class="update" name="texto"  placeholder="Escriba algo"></textarea>
+      <input  id="flinkt"   class="update"  type="text" name="materia" size="40" 	placeholder="link Teoria">
+      <input id="flinkp"   class="update"   type="text" name="materia" size="40" 	placeholder="link de Practica">
+      <div class="update">
+        <input type="checkbox" id="checkboxLunes" name="miCheckLunes"> L
+        HI: <input type="time" name="hilun" size="20" value="07:00">
+        HF: <input type="time" name="hflun" size="20" value="08:00">
+      </div>
+      <div class="update">
+        <input type="checkbox" id="checkboxMartes" name="miCheckMartes"  >M
+        HI: <input type="time" name="himar" size="20" value="07:00">
+        HF: <input type="time" name="hfmar" size="20" value="08:00">
+      </div>
+      <div class="update">
+        <input type="checkbox" id="checkboxMiercoles" name="miCheckMiercoles" > M
+        HI: <input type="time" name="himie" size="20" value="07:00">
+        HF: <input type="time" name="hfmie" size="20" value="08:00">
+      </div>
+      <div class="update">
+        <input type="checkbox" id="checkboxJueves" name="miCheckJueves" > J
+        HI: <input type="time" name="hijue" size="20" value="07:00">
+        HF: <input type="time" name="hfjue" size="20" value="08:00">
+      </div>
+      <div class="update">
+        <input type="checkbox" id="checkboxViernes" value="off" name="miCheckViernes" > V
+        HI: <input type="time" name="hivie" size="20"  value="07:00">
+        HF: <input type="time" name="hfvie" size="20" value="08:00">
+      </div>
+      <input type="button" value="Cancelar" id="mdlnmCancelar">
+      <input type="button" value="Aceptar" id="mdlnmAceptar" disabled="true">
+    </form>
+  </dialog>
+
+  <div id="contentGrafica">
+    <div id="Grafica">
+      <div id="tabla">
+        <ul>
+          <li>⌚</li>
+          <li>lun.</li>
+          <li>mar.</li>
+          <li>mie.</li>
+          <li>jue.</li>
+          <li>vie.</li>
+        </ul>
+      </div>
+
+      <div  class="dia">
+        <div class="diaa" id="hora">
+
+        </div>
+       </div>
+      <div  class="dia">
+        <div class="diaa" id="lunes">
+
+        </div>
+      </div>
+      <div  class="dia">
+        <div class="diaa" id="martes">
+
+        </div>
+      </div>
+      <div  class="dia">
+        <div class="diaa" id="miercoles">
+
+        </div>
+      </div>
+      <div  class="dia">
+        <div class="diaa" id="jueves">
+
+        </div>
+      </div>
+      <div  class="dia">
+         <div class="diaa" id="viernes">
+
+         </div>
+       </div>
+
+    </div>
+
+  </div>
+  <div id="contentMateriasList">
+    <h2>Materias</h2>
+    <ul id="listmat">
+    </ul>
+    <input type="button" id="btnnm" value="nueva Materia">
+
+  </div>
+  <div id="contentMateriasConfig">
+    <div id="config">
+      <h4>nombre</h4>
+      <p>Descipcion de la materia</p>
+      <p>Recordatorio de la materia</p>
+      <input  type="button" value="Teoria">
+      <input  type="button" value="Practica">
+      <br><input type="checkbox" name="casilla">
+      Eliminar Materia<br>
+      <input type="button" id="btnUpdate"value="Update">
+    </div>
+
+
+  </div>
+
+    <script src="horarios.js"></script>
+    <script src="horariosValidarMateria.js"></script>
+
+</body>
+</html>
